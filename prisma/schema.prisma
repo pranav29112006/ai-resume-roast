@@ -1,0 +1,20 @@
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model ResumeRoast {
+  id            String   @id @default(uuid())
+  createdAt     DateTime @default(now())
+  fileName      String
+  candidateName String?
+  email         String?
+  roast         String
+  score         Int
+  improvements  String   // Will store JSON serialized list of improvements
+  parsedText    String?  // Saved text content of the resume
+}
