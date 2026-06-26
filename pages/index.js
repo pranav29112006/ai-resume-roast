@@ -224,7 +224,7 @@ SKILLS:
       <Head>
         <title>ResumeRoast.AI</title>
         <meta name="description" content="Upload your PDF or paste your resume text to get an instant, brutally honest AI roast alongside concrete tips to fix it." />
-        <link rel="icon" href="/favicon.ico?v=2" />
+        <link rel="icon" type="image/png" href="/profile.png?v=3" />
       </Head>
 
       {/* Header / Brand */}
